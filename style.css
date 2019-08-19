@@ -1,9 +1,9 @@
 .container {
-    width: 80vw;
+    width: 90vw;
 }
 
 .rsvp-ghost {
-    max-width: 10vw;
+    max-width: 50vw;
     height: auto;
 }
 
@@ -17,11 +17,26 @@ body {
 }
 
 .sunny {
-    max-width: 15vw;
+    max-width: 50vw;
 }
 
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media(min-width: 768px) {
+    .sunny {
+        max-width: 15vw;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 80vw;
+    }
+
+    .rsvp-ghost {
+        max-width: 10vw;
+        height: auto;
+    }
 }
