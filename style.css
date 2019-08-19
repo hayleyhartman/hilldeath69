@@ -9,6 +9,8 @@
 
 .cloudy {
     max-width: 75vw;
+    display: block;
+    margin: 2rem auto 0;
 }
 
 .hill {
@@ -50,8 +52,7 @@ body {
     
     .cloudy {
         width: 10vw;
-        display: block;
-        margin: 2rem auto 0;
+
     }
 
     .cloud-flex {
