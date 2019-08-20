@@ -60,18 +60,18 @@ body {
         height: auto;
     }
 
-    /* .ghost-words {
+    .ghost-words {
+        display: block;
         opacity: 0;
         max-width: 12vw;
         transition-property: all;
-        transition-duration: 500ms;
-    } */
-/* 
+        transition-duration: 1000ms;
+    }
+
     .ghost-words.activate {
         opacity: 1;
-        display: inline;
     }
-     */
+    
     .cloudy {
         width: 10vw;
 
