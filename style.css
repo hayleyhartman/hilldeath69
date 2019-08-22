@@ -34,7 +34,208 @@ body {
     display: none;
 }
 
+.cloudy {
+    width: 45vw;
+    display: block;
+    margin-top: 0rem;
+    position: absolute;
+}
+
+#schedule {
+    height: fit-content;
+}
+
+.row {
+    align-items: center;
+}
+
+.drops {
+    width: 45vw;
+    height: 4rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.drops .drop {
+    position: relative;
+    width: 8px;
+    height: auto;
+    display: inline-block;
+    top: 40px;
+    z-index: -1;
+    transition-property: all;
+    transition-duration: 3000ms;
+}
+
+.drops .drop:last-child {
+    margin-top: -4rem;
+}
+.drops .drop:nth-child(2) {
+    margin-top: -3.7rem;
+}
+.drops .drop:nth-child(3) {
+    margin-top: -2rem;
+}
+.drops .drop:nth-child(4) {
+    margin-top: -3.5rem;
+}
+.drops .drop:nth-child(5) {
+    margin-top: -2.9rem;
+}
+.drops .drop:nth-child(6) {
+    margin-top: -4rem;
+}
+.drops .drop:nth-child(7) {
+    margin-top: -3.3rem;
+}
+.drops .drop:nth-child(1) {
+    margin-top: -4.5rem;
+}
+.drops .drop:nth-child(8) {
+    margin-top: -4.5rem;
+}
+
+.drops .drop.rain {
+    top: 325px;
+    margin-top: 5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+@media(min-width: 375px) {
+    #schedule {
+        height: 340px;
+    }
+    .drops .drop.rain {
+        top: 250px;
+        margin-top: 5rem;
+    }
+
+}
+
+@media(min-width: 450px) {
+    .cloudy {
+        width: 30vw;
+        display: block;
+        margin-top: 0rem;
+        position: absolute;
+    }
+
+    .drops {
+        width: 30vw;
+        height: 6rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+
 @media(min-width: 768px) {
+    h5 {
+        font-size: 1.25rem;
+    }
+    .sunny {
+        max-width: 10vw;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 80vw;
+    }
+
+    .ghost-div {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+
+    .rsvp-ghost {
+        max-width: 10vw;
+        height: auto;
+    }
+
+    .ghost-words {
+        display: block;
+        opacity: 0;
+        max-width: 12vw;
+        transition-property: all;
+        transition-duration: 1000ms;
+    }
+
+    .ghost-words.activate {
+        opacity: 1;
+    }
+    
+    .cloudy {
+        width: 20vw;
+        display: block;
+        margin-top: 0rem;
+        position: absolute;
+    }
+
+    #schedule {
+        height: 325px;
+    }
+
+    .drops {
+        width: 20vw;
+        height: 4rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .drops .drop {
+        position: relative;
+        width: 8px;
+        height: auto;
+        display: inline-block;
+        top: 40px;
+        z-index: -1;
+        transition-property: all;
+        transition-duration: 3000ms;
+    }
+
+    .drops .drop:last-child {
+        margin-top: -4rem;
+    }
+    .drops .drop:nth-child(2) {
+        margin-top: -3.7rem;
+    }
+    .drops .drop:nth-child(3) {
+        margin-top: -2rem;
+    }
+    .drops .drop:nth-child(4) {
+        margin-top: -3.5rem;
+    }
+    .drops .drop:nth-child(5) {
+        margin-top: -2.9rem;
+    }
+    .drops .drop:nth-child(6) {
+        margin-top: -4rem;
+    }
+    .drops .drop:nth-child(7) {
+        margin-top: -3.3rem;
+    }
+    .drops .drop:nth-child(1) {
+        margin-top: -4.5rem;
+    }
+    .drops .drop:nth-child(8) {
+        margin-top: -4.5rem;
+    }
+}
+
+
+@media(min-width: 992px) {
+
+    .deets {
+        max-width: 28vw;
+    }
     .sunny {
         max-width: 10vw;
     }
@@ -74,16 +275,63 @@ body {
     
     .cloudy {
         width: 10vw;
-
+        display: block;
+        margin-top: 0rem;
+        position: absolute;
     }
 
-    .cloud-flex {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    #schedule {
+        height: 285px;
     }
 
-    .row {
-        align-items: center;
+    .drops {
+        width: 10vw;
+        height: 3rem;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .drops .drop {
+        position: relative;
+        width: 5px;
+        height: auto;
+        display: inline-block;
+        top: 40px;
+        z-index: -1;
+        transition-property: all;
+        transition-duration: 3000ms;
+    }
+
+    .drops .drop:last-child {
+        margin-top: -5rem;
+    }
+    .drops .drop:nth-child(2) {
+        margin-top: -4.7rem;
+    }
+    .drops .drop:nth-child(3) {
+        margin-top: -3rem;
+    }
+    .drops .drop:nth-child(4) {
+        margin-top: -4.5rem;
+    }
+    .drops .drop:nth-child(5) {
+        margin-top: -3.9rem;
+    }
+    .drops .drop:nth-child(6) {
+        margin-top: -5rem;
+    }
+    .drops .drop:nth-child(7) {
+        margin-top: -4.3rem;
+    }
+    .drops .drop:nth-child(1) {
+        margin-top: -5.5rem;
+    }
+    .drops .drop:nth-child(8) {
+        margin-top: -5.5rem;
+    }
+
+    .drops .drop.rain {
+        top: 225px;
+        margin-top: 5rem;
     }
 }
