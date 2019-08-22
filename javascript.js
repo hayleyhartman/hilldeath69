@@ -6,7 +6,8 @@ const dropsId = document.getElementById("drops")
 
 ghost.addEventListener("mouseover", wordsAppear)
 ghost.addEventListener("mouseout", wordsFade)
-schedule.addEventListener("wheel", makeItRain)
+schedule.addEventListener("mouseover", makeItRain)
+schedule.addEventListener("touchstart", makeItRain)
 
 function wordsAppear () {
     words.style.opacity = "0.6"
