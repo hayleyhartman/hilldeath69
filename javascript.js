@@ -2,7 +2,6 @@ const ghost = document.getElementById("ghost")
 const words = document.getElementById("words")
 const schedule = document.getElementById("schedule")
 const drops = document.getElementsByClassName("drop")
-const dropsId = document.getElementById("drops")
 
 ghost.addEventListener("mouseover", wordsAppear)
 ghost.addEventListener("mouseout", wordsFade)
